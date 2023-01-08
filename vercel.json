@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/(.*)",
+        "headers": {
+          "cache-control": "s-maxage=10000"
+        },
+        "dest": "https://cdn.jsdelivr.net/$1"
+      }
+    ]
+  }
